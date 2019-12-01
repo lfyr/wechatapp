@@ -1,0 +1,49 @@
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <!-- 搜索框 -->
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" />
+    </view>
+  </view>
+  <!-- 搜索按钮,调用搜索查询方法 -->
+  <view class="weui-search-bar__cancel-btn" bindtap='方法名a'>搜索</view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="row category">
+  <navigator url="/index.php/Home/Index/hot.html" class="col-xs-3">
+    <image class="img-responsive" src="/images/icon_rm.png"></image>
+    <text>热门</text>
+  </navigator>
+  <navigator url="/index.php/Home/Index/best.html" class="col-xs-3">
+    <image class="img-responsive" src="/images/icon_tm.png"></image>
+    <text>精品</text>
+  </navigator>
+  <navigator url="/index.php/Home/Index/neww.html" class="col-xs-3">
+    <image class="img-responsive" src="/images/theme.png"></image>
+    <text>新品</text>
+  </navigator>
+  <navigator url="/index.php/Home/Category/lst.html" class="col-xs-3">
+    <image class="img-responsive" src="/images/icon_pp.png"></image>
+    <text>品牌</text>
+  </navigator>
+</view>
+<view class="hg"></view>
+<view class="tb_box">
+  <h2 class="tab_tit">数码办公</h2>
+  <navigator class="more" url="/index.php/Home/Category/moreLst/cateId/1.html">更多</navigator>
+  <view class="tb_type tb_type_even clearfix">
+    <navigator class="th_link" href="/index.php/Home/Index/goods/id/46.html" style="text-align: center; padding:10px;border-right: 1px solid #ccc;">
+      <image src="http://www.api.com/Public/Uploads/Admin/2016-12-24/thumb_0_585e448fcaab3.jpg"  width="100%" height="100%"></image>
+    </navigator>
+    <navigator class="th_link" href="/index.php/Home/Index/goods/id/46.html" style="text-align: center; padding:10px;border-right: 1px solid #ccc;">
+      <image src="http://www.api.com/Public/Uploads/Admin/2016-12-24/thumb_0_585e44fa5358c.jpg"  width="100%" height="100%"></image>
+    </navigator>
+  </view>
+</view>

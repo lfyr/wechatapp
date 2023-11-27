@@ -1,0 +1,7 @@
+<!--pages/goods/index.wxml-->
+<view class="box">
+<image class="box-img"  mode="aspectFill" src="/images/0da8eb94-0159-4700-a6a5-bc007da5a853.jpg"></image>
+<view class="desc">
+<text>美女</text>
+</view>
+</view>

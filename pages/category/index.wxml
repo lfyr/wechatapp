@@ -1,0 +1,29 @@
+<!--pages/goods/list.wxml-->
+
+<view class="bt fixed-top">  
+  <view class="citem">  
+     <text bindtap="handleClick" class="item-name {{currentId === 'item1' ? 'active' : ''}}" data-id="item1">默认</text>  
+  </view>  
+  <view class="citem" >  
+     <text  bindtap="handleClick" class="item-name {{currentId === 'item2' ? 'active' : ''}}" data-id="item2">销量</text>  
+  </view>  
+  <view class="citem">  
+     <text bindtap="handleClick" class="item-name {{currentId === 'item3' ? 'active' : ''}}  "data-id="item3">评论数</text>  
+  </view>  
+  <view class="citem" >  
+     <text bindtap="handleClick" class="item-name {{currentId === 'item4' ? 'active' : ''}}" data-id="item4">价格</text>  
+  </view> 
+</view>
+
+<view class="kb"></view>
+<view class="glist">  
+  <block wx:for="{{listData}}" wx:key="index">  
+    <view class="list-item">  
+      <image class="item-image" src="{{item.image}}" mode="widthFix"></image>  
+      <view class="item-right">
+        <view class="item-name">{{item.name}}</view>
+        <view class="item-price">￥{{item.price}}</view>  
+      </view>  
+    </view>  
+  </block>  
+</view>

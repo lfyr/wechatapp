@@ -1,16 +1,17 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category/category",
-    "pages/cart/cart",
-    "pages/member/member",
-    "pages/logs/logs",
-    "pages/test/test"
+    "pages/category/index",
+    "pages/cart/index",
+    "pages/member/index",
+    "pages/logs/index",
+    "pages/test/test",
+    "pages/goods/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "Shop",
+    "navigationBarTitleText": "Shop GO",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -25,19 +26,19 @@
         "selectedIconPath": "images/iconselect_03.png"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/category/index",
         "text": "分类",
         "iconPath": "images/icon_05.png",
         "selectedIconPath": "images/iconselect_05.png"
       },
       {
-        "pagePath": "pages/cart/cart",
+        "pagePath": "pages/cart/index",
         "text": "购物车",
         "iconPath": "images/icon_07.png",
         "selectedIconPath": "images/iconselect_07.png"
       },
       {
-        "pagePath": "pages/member/member",
+        "pagePath": "pages/member/index",
         "text": "我的",
         "iconPath": "images/icon_09.png",
         "selectedIconPath": "images/iconselect_09.png"

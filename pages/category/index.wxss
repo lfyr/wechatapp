@@ -1,0 +1,78 @@
+/* pages/goods/list.wxss */
+
+/*品类分类*/
+.kb{
+    height: 38px;
+}
+.bt {  
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: nowrap; /* 确保商品不会换行 */  
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    background: #fff;
+    font-size: 12px;
+    box-shadow: 5px 5px 5px rgba(143, 142, 142, 0.5); 
+}  
+
+.fixed-top {  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    z-index: 999;  
+  }
+  
+.citem {  
+    width: 23%; /* 为了留出均匀的间距，将宽度设置为23% */  
+    margin-bottom: 2%; /* 可选：根据需要设置下方间距 */  
+}  
+
+.citem-image {  
+    width: 100%;  
+    height: auto;  
+    object-fit: cover;  
+}
+
+.glist {  
+    display: flex;  
+    flex-direction: column; 
+    margin: 1px; 
+  }  
+    
+.list-item {  
+    display: flex;  
+    align-items: center;  
+    margin-bottom: 10px; /* 根据需要设置列表项之间的间距 */  
+    border: 1px solid #000;
+    /* box-shadow: 3px 3px 3px rgba(143, 142, 142, 0.5);  */
+    height: 100px;
+    margin-left:3px;
+    margin-right:3px;
+  }  
+  
+    
+  .item-image {  
+    padding:3px;
+    width: 100px; /* 根据需要设置图片的宽度 */  
+    height: 100px; /* 根据需要设置图片的高度 */  
+  }  
+    
+  .item-right {  
+    margin-left: 20px; /* 设置描述与图片之间的间距 */  
+    font-size: 14px;
+    line-height: 25px;
+    height: 90px; /* 根据需要设置图片的高度 */  
+  }
+
+  .item-name {  
+      font-size: 12px;
+  }
+  .item-price {  
+    color: crimson;
+  }
+
+  .active {  
+    color: red; /* 举例：选中元素的背景色为红色 */  
+  }

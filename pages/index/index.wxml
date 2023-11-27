@@ -12,38 +12,38 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}" wx:key="unique">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" />
+      <image src="{{item}}" mode="widthFix" class="slide-image" />
     </swiper-item>
   </block>
 </swiper>
-<view class="row category">
-  <navigator url="/index.php/Home/Index/hot.html" class="col-xs-3">
-    <image class="img-responsive" src="/images/icon_rm.png"></image>
-    <text>热门</text>
-  </navigator>
-  <navigator url="/index.php/Home/Index/best.html" class="col-xs-3">
-    <image class="img-responsive" src="/images/icon_tm.png"></image>
-    <text>精品</text>
-  </navigator>
-  <navigator url="/index.php/Home/Index/neww.html" class="col-xs-3">
-    <image class="img-responsive" src="/images/theme.png"></image>
-    <text>新品</text>
-  </navigator>
-  <navigator url="/index.php/Home/Category/lst.html" class="col-xs-3">
-    <image class="img-responsive" src="/images/icon_pp.png"></image>
-    <text>品牌</text>
-  </navigator>
+<view class="category">  
+  <view class="citem" wx:for="{{category}}" wx:key="index">  
+    <navigator open-type="switchTab" url="/pages/category/index">
+        <image src="{{item.image}}" mode="widthFix" class="citem-image"></image>  
+        <text class="item-name">{{item.name}}</text>  
+    </navigator>
+  </view>  
 </view>
 <view class="hg"></view>
 <view class="tb_box">
-  <h2 class="tab_tit">数码办公</h2>
-  <navigator class="more" url="/index.php/Home/Category/moreLst/cateId/1.html">更多</navigator>
-  <view class="tb_type tb_type_even clearfix">
-    <navigator class="th_link" href="/index.php/Home/Index/goods/id/46.html" style="text-align: center; padding:10px;border-right: 1px solid #ccc;">
-      <image src="http://www.api.com/Public/Uploads/Admin/2016-12-24/thumb_0_585e448fcaab3.jpg"  width="100%" height="100%"></image>
-    </navigator>
-    <navigator class="th_link" href="/index.php/Home/Index/goods/id/46.html" style="text-align: center; padding:10px;border-right: 1px solid #ccc;">
-      <image src="http://www.api.com/Public/Uploads/Admin/2016-12-24/thumb_0_585e44fa5358c.jpg"  width="100%" height="100%"></image>
-    </navigator>
-  </view>
+    <view class="span">
+        <h2 class="sleft">精品推荐</h2>
+        <navigator class="more"  open-type="switchTab" url="/pages/category/index">更多>></navigator>
+    </view>
+    
+    <!-- 商品列表 -->  
+    <view class="good_list">  
+        <block wx:for="{{products}}" wx:key="*this">  
+            <view class="item">  
+            <navigator url="/pages/goods/index">
+                <image src="{{item.image}}" mode="widthFix" class="item-image"></image>  
+                <text class="item_name">{{item.name}}</text>  
+                <view class="item_price">¥{{item.price}}</view>  
+            </navigator>
+            </view>  
+            
+        </block>  
+    </view>
+    <view class="hg"></view>
 </view>
+

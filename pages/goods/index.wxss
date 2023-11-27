@@ -1,0 +1,16 @@
+/* pages/goods/index.wxss */
+
+.box{
+    display: flex;  
+    margin-bottom: 10px; /* 根据需要设置列表项之间的间距 */  
+    border: 1px solid #e5e5e5;
+    height: 100px;
+}
+.box-img{
+    padding:1px;
+    width: 100px;
+    height: 100px;
+}
+.desc{
+    float:right;
+}

@@ -54,20 +54,6 @@
   font-size: 14px;
 }
 
-.category {
-  padding: 10px 0;
-  text-align: center;
-  background: #fff;
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 100px;
-  font-size: 14px;
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
 .col-xs-3 {
   width: 25%;
   float: left;
@@ -87,34 +73,81 @@
 }
 
 .hg {
-  clear: both;
-  height: 20px;
+  height: 5px;
   background: #e5e5e5;
   border: 1px solid #e5e5e5;
 }
-
-
+.tb_box{
+    box-shadow: 5px 5px 5px rgba(143, 142, 142, 0.5); 
+}
+.span{
+    padding-top: 20px; 
+    font-size: 12px; 
+}
+.sleft {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+  }
 .more {
   float: right;
   padding-right: 20px;
   font-size: 12px;
-  text-decoration-line: underline;
-  padding-top:10px;
 }
-.tb_box .tb_type {
-  margin-top:10px;
-    border-top: 1px solid #e5e5e5;
-    overflow: hidden;
-}
-.tab_tit {
-  padding-left: 10px;
-  font-size: 14px;
-  color: #333;
-}
-.tb_type .th_link {
-    border-bottom: 1px solid #dadada;
-    border-width: 0 0 1px;
-    float: left;
-    width: 44.2%;
+
+/*品类分类*/
+.category {  
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: nowrap; /* 确保商品不会换行 */  
+    margin-top: 10px;
     text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 12px;
+}  
+    
+.citem {  
+    width: 23%; /* 为了留出均匀的间距，将宽度设置为23% */  
+    margin-bottom: 2%; /* 可选：根据需要设置下方间距 */  
+}  
+
+.citem-image {  
+    width: 100%;  
+    height: auto;  
+    object-fit: cover;  
+}
+
+/*商品列表样式 */  
+  .good_list {  
+    display: flex;  
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    padding: 10px;
+  }  
+    
+  .item {  
+    width: calc(50% - 10px); /* 为了在两列之间留出一些间距，我们使用calc()减去一部分宽度 */  
+    margin-bottom: 10px; 
+    font-size: 12px;
+  }  
+    
+  .item-image {  
+    width: 100%; /* 图片宽度100%，确保图片完整展示在.item容器内 */  
+    object-fit: cover; /* 如果图片原始比例与容器不匹配，此属性可以确保图片覆盖整个容器，但可能部分被裁剪 */ 
+    border: 1px solid #000;  
+    /* box-shadow: 5px 5px 5px rgba(143, 142, 142, 0.5); */
+  }
+
+  .item_name{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+ .item_price{
+  font-size: 12px;
+  line-height: 20px;
+  color:crimson;
 }

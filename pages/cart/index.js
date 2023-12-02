@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    menu:[
+        {"id":1,"name":"热门","image":"/images/icon_pp.png"},
+        {"id":2,"name":"热门","image":"/images/icon_rm.png"},
+        {"id":3,"name":"热门","image":"/images/icon_tm.png"},
+        {"id":4,"name":"热门","image":"/images/theme.png"},
+    ]
   },
 
   /**

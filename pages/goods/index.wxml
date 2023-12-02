@@ -1,7 +1,49 @@
 <!--pages/goods/index.wxml-->
-<view class="box">
-<image class="box-img"  mode="aspectFill" src="/images/0da8eb94-0159-4700-a6a5-bc007da5a853.jpg"></image>
-<view class="desc">
-<text>美女</text>
-</view>
+<view class="content">
+    <view class="goods" wx:for="{{goods}}" wx:key="id">
+        <swiper class="goods_swier" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{item.image}}" wx:key="unique">
+                <swiper-item>
+                    <image src="{{item}}" mode="widthFix" class="slide-image" />
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="goods-info">
+            <view class="goods_name"><text>{{item.name}}</text></view>
+            <view class="price-info">
+                <text class="price-title">商城价格:</text>
+                <text class="price"> ￥{{item.price}}</text>
+            </view>
+            <view class="attr_info">
+                <view class="attr-title">颜色:</view>
+                <view class="attr">土豪金</view>
+            </view>
+            <view class="tally_info">
+                <view class="attr-title">数量:</view>
+                <view class="addition">+</view>
+                <view class="num">1</view>
+                <view class="subtraction">-</view>
+            </view>
+        </view>
+    </view>
+    <view class="goods-content">
+        <view class="goods-content-tab">
+            <view class="tab {{currentId === 'item1' ? 'active' : ''}}  " data-id="item1" bindtap="handleClick">图文详情</view>
+            <view class="tab {{currentId === 'item2' ? 'active' : ''}}  " data-id="item2" bindtap="handleClick">规格参数</view>
+            <view class="tab {{currentId === 'item3' ? 'active' : ''}}  " data-id="item3" bindtap="handleClick">评价(7)</view>
+        </view>
+        <view class="tab-content" wx:if="{{currentId == 'item1'}}">图文</view>
+        <view class="tab-content" wx:if="{{currentId == 'item2'}}">规格</view>
+        <view class="tab-content" wx:if="{{currentId == 'item3'}}">评价</view>
+    </view>
+    <view class="bottom">
+        <view class="shop-item">
+            <image class="shop-img" src="/images/icon_07.png"/>
+            <text class="txt">购物车</text>
+        </view>
+        <view class="shop-item">
+            <view class="shop">加入购物车</view>
+            <view class="buy">立即购买</view>
+        </view>
+    </view>
 </view>

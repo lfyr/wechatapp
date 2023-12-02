@@ -1,16 +1,159 @@
 /* pages/goods/index.wxss */
+.content{
+    height: 500px;
+    background-color: #eee;
+}
+.goods{
+    background-color: #fff;
+    padding: 20rpx;
+}
+.goods_swier{
+   
+    height: 780rpx;
+}
+.slide-image {
+    width: 100%;
+}
 
-.box{
-    display: flex;  
-    margin-bottom: 10px; /* 根据需要设置列表项之间的间距 */  
-    border: 1px solid #e5e5e5;
-    height: 100px;
+.goods-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 控制水平对齐 */  
 }
-.box-img{
-    padding:1px;
-    width: 100px;
-    height: 100px;
+
+.goods_name{
+  font-size: 24rpx;
 }
-.desc{
-    float:right;
+.price-info{
+    display: flex;
+    padding-top: 20rpx;
+    line-height: 40rpx;
+}
+.price-title{
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+}
+.price{
+    height: 50rpx;
+    line-height: 50rpx;
+    color: crimson;
+}
+.attr_info{
+    display: flex;
+    padding-top: 20rpx;
+    line-height: 40rpx;
+}
+.attr-title{
+   font-size: 24rpx;
+}
+.attr{
+    font-size: 24rpx;
+    text-align: center;
+    margin-left: 10rpx;
+    width: 100rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    border: 2rpx solid #aaa;
+}
+
+.num{
+    height: 40rpx;
+    font-size: 24rpx;
+    margin-left: 10rpx;
+    width: 60rpx;
+    height: 40rpx;
+    border: 2rpx solid #aaa;
+    text-align: center;
+}
+.tally_info{
+    display: flex;
+    padding-top: 20rpx;
+    line-height: 40rpx;
+}
+.addition{
+    font-size: 24rpx;
+    text-align: center;
+    margin-left: 10rpx;
+    width: 50rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    border: 2rpx solid #aaa;
+}
+.subtraction{
+    font-size: 24rpx;
+    text-align: center;
+    margin-left: 10rpx;
+    width: 50rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    border: 3rpx solid #aaa;
+}
+.goods-content{
+    background-color: #fff;
+    margin-top: 20rpx;
+}
+.goods-content-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-bottom: 1rpx solid #aaa;
+    text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+.tab{
+    width: 33.3%;
+    font-size: 24rpx;
+}
+.active {  
+    color: red; /* 举例：选中元素的背景色为红色 */ 
+    border-bottom: 1rpx solid red; 
+  }
+.tab-content{
+  padding: 20rpx;
+  min-height: 500rpx;
+}
+.bottom{
+    display: flex;
+    justify-content: center; /* 控制水平对齐 */  
+    align-items: center; /* 控制垂直对齐 */  
+    margin-top: 20rpx;
+    padding: 5rpx;
+    background-color: #fff;
+    border-top: 1rpx solid #aaa; 
+    position: fixed;  
+    bottom: 0;  
+    width: 100%;  
+    height: 44px;  
+}
+.shop-item{
+    width: 48%;
+    display: flex;
+    font-size: 24rpx;
+    color: #fff;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.shop-img{
+    width: 50rpx;
+    height: 50rpx;
+}
+.shop{
+    width: 50%;
+    background-color: #46b8da;
+    text-align: center;
+    border-radius: 6rpx;
+}
+.buy{
+    margin-left: 10rpx;
+    width: 50%;
+    background-color: #d43f3a;
+    text-align: center;
+    border-radius: 6rpx;
+}
+.txt{
+    font-size: 24rpx;
+    color: #000000;
+    padding-left: 10rpx;
 }
